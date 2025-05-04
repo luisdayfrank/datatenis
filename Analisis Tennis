@@ -1,0 +1,85 @@
+# Guía y Plantilla para Análisis Comparativo de Jugadores de Tenis
+
+## 1. Objetivos del Análisis
+
+- Comparar el rendimiento histórico de dos jugadores en torneos.
+- Identificar patrones, fortalezas y debilidades.
+- Estimar probabilidades de victoria en un hipotético enfrentamiento.
+- Generar insights accionables (ej: estrategias, rivales a evitar).
+- Garantizar y Forzar el analisis del Tenista 1 y Tenista 2 por separado, para asi garantizar y mejorar el analisis del historial de cada uno, en pocas palabra analisa y evalua primero el historiar del jugador 1 y luego haz lo mismo con el jugador 2
+---
+
+## 2. Recolección y Preparación de Datos
+
+Para cada Tenista, se necesita (esta información se encuentra en los archivos de texto adjuntados):
+**a) Formato de los datos requeridos:**  
+- Historial reciente de partidos de cada Tenista
+- Variables mínimas por partido:
+  - Fecha, Torneo, Superficie, Ronda, Ranking propio y rival, Score, DR (Dominance Ratio), Aces %, DF %, 1st Serve In %, 1st Serve Won %, 2nd Serve Won %, Break Points Salvados, Duración.
+
+**b) Separar los datos por jugador**  
+- Cada jugador debe tener su propio historial y estadisticas, claramente identificado.
+---
+
+## 3. Estructura General del Análisis
+
+### a) Estadísticas Generales y Cuadro Resumen
+
+- **Por superficie**: hard, clay, grass.
+- **Variables clave**: Win Rate, DR, % de primer servicio, puntos ganados con primer y segundo saque, aces, dobles faltas, break points salvados.
+- **Cuadro comparativo** entre ambos jugadores por superficie.
+
+### b) Desempeño ante rivales por ranking
+ - Rivales comunes: Jugadores a los que ambos se hayan enfrentado.
+- Resultados ante top 10, 20, 50, 100, 200.
+- Win rate y partidos destacados contra rivales fuertes.
+- Rating a lo largo del tiempo (mejoras/descensos).
+- Rachas de victorias/derrotas.
+
+### c) Tendencias y patrones
+
+- Rachas positivas/negativas.
+- Mejor torneo reciente.
+- Evolución en rondas avanzadas.
+- Cambios de rendimiento a lo largo del año.
+- calcular momentun y desempeño en cada superficie
+- Debilidades contra rivales específicos.
+- Consistencia en etapas clave (ej: finales).
+
+### d) Sets y puntos promedio
+
+- Promedio de sets por partido.
+- Juegos ganados y perdidos por partido.
+- Puntos promedio por set.
+- Promedio de recuperarse despues de perder un sets
+- Probabilidad de ganar despues de perder un sets
+- Promedio de sets 1 ganados
+
+### e) Análisis de enfrentamiento directo reciente
+
+- Si hubo enfrentamientos recientes, incluir DR, % de primer servicio, break points, sets, resumen de rendimiento y momentun del partido.
+
+### f) Predicción y conclusiones
+
+- Probabilidad estimada de victoria de cada jugador en la superficie mas reciente y de forma general.
+- Factores clave para el enfrentamiento (por ejemplo: si el partido es largo, si uno depende del saque, etc).
+---
+
+## 4. Reglas y Detalles Importantes
+
+- **Siempre separar por superficie**. Si la mayoría de partidos son la superficie jugada recientemente, el análisis se enfoca ahí. Si hay variedad, presentar por cada superficie.
+- **Usar promedios y porcentajes**, no solo el resultado final.
+- **Enfocarse en los últimos 6-12 meses** salvo que el usuario pida otro periodo.
+- **Citar partidos clave** (finales, victorias/derrotas ante top 50, etc.).
+- **Ser claro en fortalezas/debilidades**, no solo en los números.
+- **predicción de enfrentamiento hipotético**
+---
+
+## 5. Formato de Entrega
+-Comparación Directa: Ejemplo Cuadro resumen comparando todas las estadísticas, patrones y probabilidades disponibles y analizadas.
+- Markdown estructurado, tablas y resúmenes por superficie con el nombre de: Analisis_Tennis_Comparativo_Nombre_Jugador_1_vs_Nombre_Jugador_2.md
+- Insights al final.
+- Incluir análisis táctico ampliado de la superficie mas Reciente
+- Incluir Evolucion Reciente ("Momento" y Tendencia) de la superficie mas reciente y de forma general
+
+---
